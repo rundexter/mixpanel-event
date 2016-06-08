@@ -1,0 +1,16 @@
+{
+    "inputs"  : [{
+        "id": "token",
+        "title": "Token",
+        "description": "The Mixpanel project token"
+    }, {
+        "id": "event",
+        "title": "Event Name"
+    }, {
+        "id": "properties",
+        "title": "Event Properties",
+        "description": "JS Object with extra properties"
+    }],
+    "outputs" : [],
+    "title"   : "Mixpanel Event"
+}

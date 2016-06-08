@@ -1,0 +1,18 @@
+{
+  "author": "Dexter",
+  "dependencies": {
+    "lodash": "^3.9.3",
+    "mixpanel": "^0.4.0",
+    "q": "^1.4.1"
+  },
+  "description": "Track a mixpanel event",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "mixpanel-event",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/rundexter/mixpanel-event"
+  },
+  "version": "0.0.1"
+}
