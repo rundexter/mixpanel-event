@@ -18,7 +18,9 @@ module.exports = {
     q.all(
         _.map(trackers, function(tracker) {
           var deferred = q.defer();
-          mixpanel.track(tracker.event, tracker.properties || {}, deferred.makeNodeResolver());
+          mixpanel.track(tracker.event, _.extend({
+            distinct_id: dexter.user('profile.id')
+          }, tracker.properties || {}), deferred.makeNodeResolver());
           return deferred.promise;
         })
       )
